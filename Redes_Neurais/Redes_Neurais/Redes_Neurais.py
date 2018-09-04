@@ -1,8 +1,10 @@
 import numpy as np
 
 entradas = np.array([[0,0],[0,1],[1,0],[1,1]])
-saidas = np.array([[0],[1],[1],[1]])
+#saidas = np.array([[0],[1],[1],[1]]) Para OR
+saidas = np.array([[0],[0],[0],[1]]) #Para AND
 pesos = np.array([[0.0],[0.0]])
+#pesos = 2 * np.random.random((1,2)) - 1 #Gerando os pesos de modo aleatório
 
 taxaAprendizagem = 0.1
 epocaMaxima = 20
